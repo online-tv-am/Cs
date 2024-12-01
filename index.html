@@ -3,74 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Կայսրության Թևերը</title>
+    <title>Kaysrutyan Tevery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4db8ff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .back-button:hover {
+            background-color: #3399ff;
+        }
+        header h1 {
+            margin: 0;
+            color: #4db8ff;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
+        }
+        .video-player {
             text-align: center;
+            margin: 20px 0;
         }
-        #videoPlayer {
-            width: 80%; /* Փլեյեր 80% լայնություն */
-            height: 450px; /* Փլեյերի բարձրություն */
-            max-width: 800px; /* Максимальная ширина */
-            margin-top: 20px;
-            border: none;
+        iframe {
+            width: 380px;
+            height: 220px;
+            border: 2px solid #4db8ff;
+            border-radius: 20px;
         }
-        select {
+        .buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .buttons select {
+            background-color: #4db8ff;
+            color: white;
             padding: 10px;
-            font-size: 16px;
-            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
         }
-        h1 {
-            font-size: 24px;
-            margin-top: 20px;
+        .buttons select:hover {
+            background-color: #3399ff;
+        }
+        .description {
+            text-align: justify;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    <h1>Կայսրության Թևերը</h1>
-
-    <!-- Գործողությունն ընտրելու համար՝ csst.online և ok.ru URL-ները -->
-    <select id="episodeSelect" onchange="loadEpisode()">
-        <option value="">Ընտրեք սերիան</option>
-
-        <!-- csst.online տեսանյութեր -->
-        <option value="https://csst.online/embed/835476/">Սերիա 1</option>
-        <option value="https://csst.online/embed/835983/">Սերիա 2</option>
-        <option value="https://csst.online/embed/836277/">Սերիա 3</option>
-        <option value="https://csst.online/embed/837077/">Սերիա 4</option>
-        <option value="https://csst.online/embed/838095/">Սերիա 5</option>
-        <option value="https://csst.online/embed/838808/">Սերիա 6</option>
-        <option value="https://csst.online/embed/841079/">Սերիա 7</option>
-        <option value="https://csst.online/embed/841698/">Սերիա 8</option>
-
-        <!-- ok.ru տեսանյութեր -->
-        <option value="https://ok.ru/videoembed/7654214142653">Սերիա 1 (OK)</option>
-        <option value="https://ok.ru/videoembed/7702267366077">Սերիա 2 (OK)</option>
-        <option value="https://ok.ru/videoembed/7726692895421">Սերիա 3 (OK)</option>
-        <option value="https://ok.ru/videoembed/7774886562493">Սերիա 4 (OK)</option>
-        <option value="https://ok.ru/videoembed/7873658686141">Սերիա 5 (OK)</option>
-        <option value="https://ok.ru/videoembed/7936593169085">Սերիա 6 (OK)</option>
-        <option value="https://ok.ru/videoembed/8033302416061">Սերիա 7 (OK)</option>
-        <option value="https://ok.ru/videoembed/8076281907901">Սերիա 8 (OK)</option>
-    </select>
-
-    <br><br>
-
-    <iframe id="videoPlayer" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>
+        <a href="https://online-tv-am.github.io/main/" class="back-button">← Հետ</a>
+        <h1>Kaysrutyan Tevery</h1>
+    </header>
+    <main>
+        <div class="video-player">
+            <iframe id="videoPlayer" src="https://ok.ru/videoembed/7654214142653" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="buttons">
+            <select onchange="changeVideo(this)">
+              <option value="">Ընտրեք սերիան</option>
+                <option value="https://ok.ru/videoembed/7654214142653">Սերիա 1</option>
+                <option value="https://ok.ru/videoembed/7702267366077">Սերիա 2</option>
+                <option value="https://ok.ru/videoembed/7726692895421">Սերիա 3 </option>
+                <option value="https://ok.ru/videoembed/7774886562493">Սերիա 4 </option>
+                <option value="https://ok.ru/videoembed/7873658686141">Սերիա 5 </option>
+                <option value="https://ok.ru/videoembed/7936593169085">Սերիա 6 </option>
+                <option value="https://ok.ru/videoembed/8033302416061">Սերիա 7 </option>
+                <option value="https://ok.ru/videoembed/8076281907901">Սերիա 8 </option>
+                <option value="https://ok.ru/videoembed/8195563391677">Սերիա 9</option>
+<option value="https://ok.ru/videoembed/8222746479293">Սերիա 10</option>
+            </select>
+        </div>
+        <div class="description">
+            <p>Գոռ Վարդանյանի Կայսրության Թևերը / Kaysrutyan Tevery սերիալը դիտեք մեր կայքում բարձր որակով և անվճար (1-10)</p>
+        </div>
+    </main>
 
     <script>
-        function loadEpisode() {
-            var select = document.getElementById('episodeSelect');
-            var iframe = document.getElementById('videoPlayer');
-            var videoUrl = select.value;
-            if (videoUrl) {
-                iframe.src = videoUrl;
-            } else {
-                iframe.src = "";
-            }
+        function changeVideo(selectElement) {
+            const videoUrl = selectElement.value;
+            const iframe = document.getElementById('videoPlayer');
+            iframe.src = videoUrl;
         }
     </script>
 </body>
