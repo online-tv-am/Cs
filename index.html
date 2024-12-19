@@ -19,41 +19,47 @@
             align-items: center;
             justify-content: space-between;
         }
-        .back-button {
+        .series {
             text-decoration: none;
             color: #ffffff;
-            background-color: #4db8ff;
+            background-color: red;
             padding: 10px 15px;
             border-radius: 5px;
             font-size: 14px;
         }
-        .back-button:hover {
-            background-color: #3399ff;
+        .series:hover: {
+            background-color: red;
         }
+        .error {
+          color: blanchedalmond;
+          text-align: center
+          font-size:12px;
+        }
+        
         header h1 {
             margin: 0;
-            color: #4db8ff;
+            color: red;
             font-size: 18px;
         }
         main {
-            padding: 20px;
+            padding: 15px;
         }
         .video-player {
             text-align: center;
-            margin: 20px 0;
+            margin: 15px 0;
         }
         iframe {
             width: 380px;
             height: 220px;
-            border: 2px solid #4db8ff;
-            border-radius: 20px;
+            border: 2px solid red;
+            border-radius: 5px;
         }
         .buttons {
             text-align: center;
             margin: 20px 0;
         }
         .buttons select {
-            background-color: #4db8ff;
+            background-color: red;
             color: white;
             padding: 10px;
             border-radius: 5px;
@@ -61,7 +67,7 @@
             cursor: pointer;
         }
         .buttons select:hover {
-            background-color: #3399ff;
+            background-color: red;
         }
         .description {
             text-align: justify;
@@ -71,41 +77,25 @@
 </head>
 <body>
     <header>
-        <a href="#" class="back-button">(1-16)</a>
+        <a href="" class="series">(1-16)</a>
         <h1>Կայսրության Թևերը</h1>
     </header>
     <main>
         <div class="video-player">
             <iframe id="videoPlayer" src="https://ok.ru/videoembed/8653997017789" frameborder="15" allowfullscreen></iframe>
         </div>
-        <div class="buttons">
-            <select onchange="changeVideo(this)">
-              <option value="">Ընտրեք սերիան</option>
-                <option value="https://ok.ru/videoembed/7654214142653">Սերիա 1</option>
-                <option value="https://ok.ru/videoembed/7702267366077">Սերիա 2</option>
-                <option value="https://ok.ru/videoembed/7726692895421">Սերիա 3 </option>
-                <option value="https://ok.ru/videoembed/7774886562493">Սերիա 4 </option>
-                <option value="https://ok.ru/videoembed/7873658686141">Սերիա 5 </option>
-                <option value="https://ok.ru/videoembed/7936593169085">Սերիա 6 </option>
-                <option value="https://ok.ru/videoembed/8033302416061">Սերիա 7 </option>
-                <option value="https://ok.ru/videoembed/8076281907901">Սերիա 8 </option>
-                <option value="https://ok.ru/videoembed/8195563391677">Սերիա 9</option>
-<option value="https://ok.ru/videoembed/8222746479293">Սերիա 10</option>
-                <option value="https://ok.ru/videoembed/8375128885949">Սերիա 11</option>
-                <option value="https://ok.ru/videoembed/8401263332029">Սերիա 12</option>
-                <option value="https://ok.ru/videoembed/8550730369725">Սերիա 13</option>
-                <option value="https://ok.ru/videoembed/8563084626621">Սերիա 14</option>
-                <option value="https://secvideo1.online/embed/847936/">Սերիա 15</option>
-                <option value="https://ok.ru/videoembed/8653997017789">Սերիա 16</option>
+
+              
                 
             </select>
         </div>
         <div class="description">
-            <a href='https://vkserfing.ru/?ref=549541990'><img src='https://vkserfing.ru/banners/vkserfing_usr_200x200.gif' alt='Заработок с помощью страницы ВКонтакте' /></a>
+        <div class="error">
+  <p>Տեխնիկական խնդիրների պատճառով նախորդ սերիաները հրանարոր չէ դիտել</p>
+  </div>
 <p>Տարեթիվ: 2024</p>
 <p>Երկիր: Հայաստան</p>
-<p>Սերիա:	- </p>
-            <p>Ռեժիսոր և պրոդյուսեր՝ Գոռ Վարդանյան, տնօրեն՝ Սարգիս Հարությունյան, Գեղամ Հովհաննիսյան, օպերատոր՝ Վրեժ Սահակյան, Արմեն Պետրոսյան, մոնտաժող՝ Արամ Հարությունյան, հնչյունային ռեժիսոր՝ Գևորգ Թովմասյան, կոորդինատոր՝ Նինել Գրիգորյան, Անի Հայրապետյան, գրիմյոր՝ Անուշ Թովմասյան, Նառա Ադամյան
+<p>Ռեժիսոր և պրոդյուսեր՝ Գոռ Վարդանյան, տնօրեն՝ Սարգիս Հարությունյան, Գեղամ Հովհաննիսյան, օպերատոր՝ Վրեժ Սահակյան, Արմեն Պետրոսյան, մոնտաժող՝ Արամ Հարությունյան, հնչյունային ռեժիսոր՝ Գևորգ Թովմասյան, կոորդինատոր՝ Նինել Գրիգորյան, Անի Հայրապետյան, գրիմյոր՝ Անուշ Թովմասյան, Նառա Ադամյան
 Դերերում՝
 Գոռ Վարդանյան
 Արամո Գևորգյան
